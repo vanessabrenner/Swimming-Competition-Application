@@ -1,0 +1,6 @@
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\model\bin\Debug\model.dll
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\model\bin\Debug\model.pdb
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\model\obj\Debug\model.csproj.AssemblyReference.cache
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\model\obj\Debug\model.csproj.CoreCompileInputs.cache
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\model\obj\Debug\model.dll
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\model\obj\Debug\model.pdb

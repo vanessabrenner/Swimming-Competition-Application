@@ -1,0 +1,8 @@
+rootProject.name = 'SwimmingCompetition'
+include 'SwimmingCompetitionModel'
+include 'SwimmingCompetitionServices'
+include 'SwimmingCompetitionPersistence'
+include 'SwimmingCompetitionNetworking'
+include 'SwimmingCompetitionServer'
+include 'SwimmingCompetitionClient'
+

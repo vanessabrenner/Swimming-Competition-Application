@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+}
+
+group = 'SwimmingCompetition'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "22"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation project (':SwimmingCompetitionModel')
+    implementation project (':SwimmingCompetitionServices')
+    implementation project (':SwimmingCompetitionNetworking')
+
+    // jurnalizare
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.23.1'
+    implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.23.1'
+
+    //javafx
+    implementation 'org.openjfx:javafx-controls:15.0.1'
+    implementation 'org.openjfx:javafx-fxml:15.0.1'
+}
+
+application {
+    mainClassName = 'swimmingcompetition.client.StartJsonClientFX'
+}
+
+test {
+    useJUnitPlatform()
+}

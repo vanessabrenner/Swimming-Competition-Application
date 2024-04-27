@@ -1,0 +1,110 @@
+syntax="proto3";
+
+option java_package = "swimmingcompetition.networking.protobuf";
+option java_outer_classname = "SwimmingCompetitionProtobufs";
+
+message Organizer{
+    int64 id=1;
+    string username=2;
+    string password=3;
+}
+
+// TO DO
+enum Distance {
+  DISTANCE_UNSPECIFIED = 0;
+  MICA = 1;
+  MARE = 2;
+  MEDIE = 3;
+  EXTREMA = 4;
+}
+
+enum Style {
+  STYLE_UNSPECIFIED = 0;
+  LIBER = 1;
+  SPATE = 2;
+  FLUTURE = 3;
+  MIXT = 4;
+}
+
+message Challenge{
+  int64 id=1;
+  Distance distance = 2;
+  Style style = 3;
+}
+
+message Participant {
+  int64 id = 1;
+  string name = 2;
+  int32 age = 3;
+  repeated int64 challenge_ids = 4;
+}
+
+message ChallengeDTO{
+    int64 id = 1;
+    Distance distance = 2;
+    Style style = 3;
+    int32 no_participants = 4;
+}
+
+message ParticipantDTO {
+  int64 id = 1;
+  string name = 2;
+  int32 age = 3;
+  repeated Challenge challenges = 4;
+}
+//  protoc --java_out=test1/javaFiles SwimmingCompetitionProtocol.proto
+
+message Request{
+  enum Type{UNKNOWN=0;LOGIN=1;LOGOUT=2;FINDING_ACCOUNT=3;GET_ALL_CHALLENGES=4;
+      FINDING_ALL_PARTICIPANTS_BY_CHALLENGE=5;
+      ADD_PARTICIPANT=6; ADD_PARTICIPANT_TO_MORE_CHALLENGES=7;}
+
+  Type type=1;
+
+  // finding account
+  string username=2;
+  string password=3;
+  // login
+  Organizer organizer=4;
+  // find all challenges
+  // ...
+  // findParticipantsByChallenge
+  Challenge challenge=5;
+  // add participant
+  string name=6;
+  int32 age=7;
+  // addParticipantToMoreChallenges
+  Participant participant=8;
+  repeated Challenge challenges=9;
+  // logout
+  // Organizer organizer... [mai sus]
+
+}
+
+message Response{
+  enum Type{UNKNOWN=0;OK=1;ERROR=2;FINDING_ACCOUNT=3;GET_ALL_CHALLENGES=4;
+      FINDING_ALL_PARTICIPANTS_BY_CHALLENGE=5;
+      ADD_PARTICIPANT=6;ADD_PARTICIPANT_TO_MORE_CHALLENGES=7;
+      UPDATE_TABLES=8;}
+
+  Type type=1;
+
+  // finding account
+  Organizer organizer=2;
+  // login
+  // ...
+  // find all challenges
+  repeated ChallengeDTO challenges = 3;
+  // findParticipantsByChallenge
+  repeated ParticipantDTO participants = 4;
+  // add participant
+  Participant participant=5;
+  // addParticipantToMoreChallenges
+  // ...
+  // logout
+  // ...
+  // update tables [update]
+  // repeated ChallengeDTO challenges...
+
+  string error=6;
+}

@@ -1,0 +1,13 @@
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\bin\Debug\networking.dll
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\bin\Debug\networking.pdb
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\bin\Debug\model.dll
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\bin\Debug\services.dll
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\bin\Debug\model.pdb
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\bin\Debug\services.pdb
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\bin\Debug\Newtonsoft.Json.xml
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\obj\Debug\networking.csproj.AssemblyReference.cache
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\obj\Debug\networking.csproj.CoreCompileInputs.cache
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\obj\Debug\networking.csproj.CopyComplete
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\obj\Debug\networking.dll
+C:\Users\vanes\Documents\facultate\sem2\MPP\LABORATOR\mpp-proiect-csharp-vanessabrenner\SwimmingCompetitionCS\networking\obj\Debug\networking.pdb

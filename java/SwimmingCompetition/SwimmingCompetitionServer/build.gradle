@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'SwimmingCompetition'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project (':SwimmingCompetitionModel')
+    implementation project (':SwimmingCompetitionServices')
+    implementation project (':SwimmingCompetitionPersistence')
+    implementation project (':SwimmingCompetitionNetworking')
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+application{
+    // mainClass='StartObjectServer'
+    mainClass='swimmingcompetition.StartJsonServer'
+}

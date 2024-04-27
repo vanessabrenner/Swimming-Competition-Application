@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="507.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="swimmingcompetition.client.gui.ProfileController">
+   <children>
+      <TableView fx:id="challenges" layoutX="23.0" layoutY="35.0" prefHeight="206.0" prefWidth="404.0">
+        <columns>
+          <TableColumn fx:id="idChallengeCol" prefWidth="70.60000419616699" text="ID" />
+          <TableColumn fx:id="styleChallengeCol" prefWidth="78.00000762939453" text="Style" />
+            <TableColumn fx:id="distanceChallengeCol" prefWidth="77.60000610351562" text="Distance" />
+            <TableColumn fx:id="noParticipantsCol" prefWidth="175.19998168945312" text="Number of Participants" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="14.0" text="Challenges">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="participants" layoutX="23.0" layoutY="263.0" prefHeight="230.0" prefWidth="404.0">
+        <columns>
+          <TableColumn fx:id="idParticipantCol" prefWidth="58.19997978210449" text="ID" />
+          <TableColumn fx:id="nameParticipantCol" prefWidth="123.79999542236328" text="Name" />
+            <TableColumn fx:id="ageParticipantCol" prefWidth="73.80001831054688" text="Age" />
+            <TableColumn fx:id="challengesOfParticipantsCol" prefWidth="147.80001831054688" text="Challenges" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="244.0" text="Participants">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameParticipant_txt" layoutX="514.0" layoutY="203.0" promptText="Name of Participant" />
+      <Label layoutX="524.0" layoutY="166.0" prefHeight="26.0" prefWidth="129.0" text="Add a participant">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ageParticipant_txt" layoutX="514.0" layoutY="241.0" promptText="Age of Participant" />
+      <Button fx:id="submit" layoutX="562.0" layoutY="286.0" mnemonicParsing="false" onAction="#submit" text="Submit" />
+      <Button layoutX="619.0" layoutY="433.0" mnemonicParsing="false" onAction="#handleLogout" text="Log Out">
+         <font>
+            <Font size="8.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
